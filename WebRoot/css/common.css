@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+@import "page.css";
+
+@import "base.css";
+
+body {
+	background: url("../image/bg.png") repeat-x fixed 50% 190px #fff;
+	font-family: 微软雅黑;
+	/*	-moz-user-select: none;
+	-webkit-user-select: none;*/
+}
+
+.wrap {
+	height: 100% margin: auto;
+	text-align: center;
+	width: 100%;
+}
+
+#Datartisan_bg {
+	height: 100%;
+	width: 100%;
+}
+
+#Datartisan_bg img {
+	height: 100%;
+	width: 100%;
+}
+
+#sideDiv {
+	background: url("../image/bg2.png") repeat-x scroll 50% 190px #fff;
+	box-shadow: 10px 0 10px 0 rgba(0, 0, 0, 0.1);
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	width: 666px;
+	z-index: 100;
+}
+
+.sideDiv_content {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 96%;
+}
+
+.sideDiv_ctrlBlock {
+	cursor: pointer;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 26px;
+	z-index: 50;
+}
+
+.sideDiv_ctrlBlock #slideOutButton {
+	background: url("../image/sideDiv_ctrlBlock_button_01.png") repeat
+		scroll left top rgba(0, 0, 0, 0);
+	height: 85px;
+	margin-top: -43px;
+	position: absolute;
+	right: 0;
+	top: 312px;
+	transform: rotate(180deg);
+	width: 16px;
+}
+
+.sideDiv_ctrlBlock #slideInButton {
+	background: url("../image/sideDiv_ctrlBlock_button_01.png") repeat
+		scroll left top rgba(0, 0, 0, 0);
+	height: 85px;
+	margin-top: -43px;
+	position: absolute;
+	right: 0;
+	top: 312px;
+	width: 16px;
+}
+
+.returnToTop {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.menu {
+	border-radius: 100px 0 0 0;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+	left: 0px;
+	position: absolute;
+	margin: 7.5% auto auto 8%;
+	padding: 33px 20px 7px 0;
+	width: auto;
+}
+
+.menu .fileInfo {
+	border-radius: 0 100px 0 0;
+	position: absolute;
+	top: 0px;
+	right: -263px;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+	width: 263px;
+	height: 496px;
+	z-index: 50;
+	text-align: left;
+	display: none;
+}
+
+.menu .fileInfo .menu_section p {
+	color: #888;
+	font-size: 14px;
+}
+
+.menu .fileInfo .showSideBottom {
+	color: #888;
+	font-size: 14px;
+}
+
+.menu .fileInfo .attrToSelected {
+	position: absolute;
+	bottom: -70px;
+	width: 263px;
+	height: 70px;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+	display: none;
+}
+
+.menu .fileInfo  select {
+	width: 200px;
+	background: transparent;
+}
+
+.menu .window {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 190px;
+	height: 35px;
+	color: #888;
+	text-align: right;
+}
+
+.menu .menu_section {
+	height: auto;
+	margin: 20px auto;
+	width: 263px;
+	position:relative;
+}
+
+.menu .menu_section .menu_list>li {
+	cursor: pointer;
+	font-size: 13px;
+	line-height: 38px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.menu  .selectButton {
+	position: absolute;
+	width: 15px;
+	right: 40px;
+	top: 32px;
+}
+
+.menu  .selectButton2 {
+	top: 0px;
+}
+
+.menu .selectButton input {
+	background-color: #FFF;
+	border: 1px solid #CDCDCD;
+	border-radius:10px;
+	height: 25px;
+	width: 35px;
+	background: rgba(198, 211, 205, 0.5);
+	margin-bottom:12px;
+}
+
+.menu .menu_section>.menu_list>li>a {
+	background: none repeat scroll 0 0 rgba(198, 211, 205, 0.5);
+	display: inline-block;
+	overflow: hidden;
+	padding-right: 15px;
+	text-indent: 24px;
+	text-overflow: ellipsis;
+	transition: background 0.2s linear 0s;
+	white-space: nowrap;
+	width: 205px;
+	position: relative;
+}
+
+.secondMenuIcon {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	text-align: center;
+}
+
+.menu_list li .secondMenuList {
+	position: absolute;
+	right: 0;
+	top: 35px;
+	background: #fff;
+	z-index: 20;
+	display: none;
+}
+
+.menu_list li .secondMenuList li {
+	color: #333;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 8px;
+}
+
+.menu .menu_section .title {
+	color: #888;
+	margin-bottom: 8px;
+}
+
+.menu .menu_section .title .line {
+	border-bottom: 1px solid #999;
+	bottom: 3px;
+	display: inline-block;
+	height: 0;
+	left: 10px;
+	opacity: 0.3;
+	position: relative;
+	width: 123px;
+}
+
+.fileInput {
+	height: 30px;
+	left: 21px;
+	opacity: 0;
+	position: absolute;
+	top: 7.5px;
+	width: 176px;
+}
+
+.fileTxt {
+	height: 30px;
+	border: 1px solid #cdcdcd;
+	width: 130px;
+	background: rgba(198, 211, 205, 0.5);
+}
+
+.submitButton {
+	background-color: #FFF;
+	border: 1px solid #CDCDCD;
+	height: 32px;
+	width: 40px;
+	background: rgba(198, 211, 205, 0.5);
+}
+
+.btn {
+	background-color: #FFF;
+	border: 1px solid #CDCDCD;
+	height: 32px;
+	width: 40px;
+	background: rgba(198, 211, 205, 0.5);
+}
+
+.fileInfo .menu_section {
+	margin: 15px auto;
+}
+
+
+
+

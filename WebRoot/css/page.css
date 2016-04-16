@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+.resultViewWrap{
+    margin: 7.5% auto auto 33%;
+	position:relative;	
+	
+}
+
+.resultView {
+    border-radius: 0 100px 0 0;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    position:relative;	
+    height: auto;
+    min-height: 500px;
+    padding: 33px 20px 15px 0;
+    margin-top:15px;
+    width: 56%;
+    overflow: hidden;
+    resize:none;
+}
+.resultView .window{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:35px;
+	color:#888;
+	text-align:left;
+	
+}
+
+.resultView .window img{
+	height: 30px;
+	width: 30px;
+	margin-top:5px;
+}
+
+.resultView .window .refreshWindow{
+	margin-left:-5px;
+}
+
+.resultView .iframe{
+	resize:both;	
+}
+
+
+.resultView .container{
+	 width:100% ;
+	 height:50px;
+	
+}
+
+textarea {
+    background: none repeat scroll 0 0 transparent;
+    border: 2px solid #e1e8e5;
+    float: left;
+    position: relative;
+    resize: none;
+}
+.message {
+    border: 2px solid #e1e8e5;
+    border-radius: 30px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    height: 90%;
+    margin: 7% 20px auto;
+    width: 95%;
+}
+.sideDiv_content .message #sendedContent {
+    background: none repeat scroll 0 0 transparent;
+     border: 2px solid #e1e8e5;
+	border-bottom:none;
+    float: left;
+    height: 66%;
+    margin: 2% 20px 0;
+    overflow-y: auto;
+    position: relative;
+    width: 92%;
+}
+#sendedContent #sended {
+    margin: 20px 15px 0;
+    padding-top: 3px;
+     text-shadow:1px 1px rgba(0,0,0,.1);
+}
+
+#sendedContent #sended h1 {
+  
+}
+
+#sendedContent #sended h3 {
+    padding: 3px 0 0 10px;
+}
+.sideDiv_content #sending {
+    border-top: medium none;
+    height: 10%;
+    margin: auto 0 auto 20px;
+    width: 92%;
+}
+.sideDiv_content #sendButton {
+    background: none repeat scroll 0 0 transparent;
+    border-radius: 100%;
+    float: left;
+    height: 10%;
+    margin: auto 0 auto 40%;
+    position: relative;
+    width: 15%;
+}
+.sideDiv_content .profile {
+    float: left;
+    height: 6%;
+    margin: 1% 0 0 20px;
+    position: relative;
+    width: 9%;
+    z-index: 50;
+}
+.sideDiv_content .profile img {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+}
+.sideDiv_content .charName {
+    float: left;
+    height: 5%;
+    margin-left: 20px;
+    margin-top: 3%;
+    max-width: 400px;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.sideDiv_content .charMenu {
+    border: 1px solid #e1e8e5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    float: left;
+    height: 3%;
+    margin: 1% 20px;
+    position: relative;
+    width: 92%;
+}
+.sideDiv_content .charMenu #chatExpressionIcon {
+    background: url("../image/expressButton.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 100%;
+    margin-left: 3%;
+    width: 15px;
+}
+.sideDiv_content .charMenu #expressionChoice {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    display: none;
+    height: 150px;
+    margin: -150px -15px;
+    position: absolute;
+    width: 360px;
+}
+#expressionChoice ul {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    width: 360px;
+}
+#expressionChoice ul li {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    float: left;
+    height: 22px;
+    margin: -1px 0 0 -1px;
+    padding: 4px 2px;
+    text-align: center;
+    width: 26px;
+}
+#expressionChoice ul li img {
+    height: 22px;
+    width: 22px;
+}
